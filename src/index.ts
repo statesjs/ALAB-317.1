@@ -119,7 +119,7 @@ class NCycle<T> {
     if (isMakeArray && isModelArray) {
       const makeArray = this.make as T[];
       const modelArray = this.model as T[];
-      const minLength = Math.min(makeArray.length, modelArray.length);
+      const minLength = Math.min(makeArray.length, modelArray.length); //to avoid issues of diff array lengths as per testCycle5
 
       for (let i = 0; i < minLength; i++) {
         console.log(
